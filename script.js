@@ -1,6 +1,17 @@
-//let first=document.getElementsByClassName("first") [1]
-//console.log("first",first)
-//first.style.backgroundColor="red";
+let addBtn=document.getElementById("btnAdd")
+let addBtn=document.getElementById("btnminus")
+addBtn.onclick=function(){};
+//console.log("add btn clicked")
+addBtn.onclick=function(){
 
-let hi = document.getElementById("hi")
-hi.style.background = "green";
+counter++;
+let ourText= document.getElementById("our Text");
+ourText.innerText=counter;
+};
+
+counter--;
+let ourText= document.getElementById("our Text");
+ourText.innerText=counter;
+minusBtn.onclick=function(){
+    
+};
