@@ -1,17 +1,22 @@
-let addBtn=document.getElementById("btnAdd")
-let addBtn=document.getElementById("btnminus")
-addBtn.onclick=function(){};
-//console.log("add btn clicked")
-addBtn.onclick=function(){
+let addbtn=document.getElementById("btnAdd");
+let Minusbtn=document.getElementById("btnMinus");
+let counter=0;
+let colors=["red", "green", "blue"];
 
-counter++;
-let ourText= document.getElementById("our Text");
-ourText.innerText=counter;
+
+addbtn.onclick=function(){
+    counter++;
+    let ourText=document.getElementById("ourText");
+    ourText.innerText=counter;
+    ourText.style.color=colors[counter % 3];
+    //("add btn click");
 };
-
-counter--;
-let ourText= document.getElementById("our Text");
-ourText.innerText=counter;
-minusBtn.onclick=function(){
-    
+//console.log(Minusbtn)
+Minusbtn.onclick=function() {
+    if(counter == 0) return;
+    counter--;
+    let ourText=document.getElementById("ourText");
+    ourText.innerText=counter;
+    ourText.style.color=colors[counter % 3];
+    //console.log("minus btn click");
 };
